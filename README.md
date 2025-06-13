@@ -41,9 +41,8 @@ I conducted:
 - Class distribution visualization
 
 **Boxplot Example: likes_per_view by claim_status**
-
-> 🖼️ _Place this plot here_  
-> _Code: See `plt.figure(...)` for `likes_per_view` and `claim_status` in the notebook_
+ 
+![likes_per_view vs claim_status](images/Boxplot_likes_per_view_by_claim_status.png)
 
 **Heatmap of numeric correlations**
 
