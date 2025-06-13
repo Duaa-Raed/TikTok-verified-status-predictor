@@ -48,8 +48,8 @@ I conducted:
 
 **Heatmap of numeric correlations**
 
-> 🖼️ _Place this plot here_  
-> _Code: `sns.heatmap(correlation_matrix)`_
+
+![Correlation_Matrix_Heatmap](images/Correlation_Matrix_Heatmap.png)
 
 ---
 
