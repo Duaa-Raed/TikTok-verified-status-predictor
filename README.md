@@ -151,9 +151,9 @@ Barplot of most impactful features:
 
 **Files in the Repository**
 
-- `tiktok_project_analysis.py`: full cleaned code with modeling and EDA
+- `tiktok_project_analysis.py`:  Full end-to-end code for EDA, feature engineering, model building and evaluation.
 - `README.md`: this file
-- `images/`: directory for exported plots
+- `images`: directory for exported plots
 
 ---
 
