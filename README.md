@@ -30,7 +30,7 @@ After cleaning and balancing, the final dataset includes:
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+**Exploratory Data Analysis (EDA)**
 
 I conducted:
 
@@ -53,9 +53,9 @@ I conducted:
 
 ---
 
-## 🧪 Hypothesis Testing
+ **Hypothesis Testing**
 
-We explored the following hypotheses:
+ I explored the following hypotheses:
 
 - Are **likes_per_view** significantly different between **claim** vs **opinion**?
 - Do **shares/comments per view** vary by **claim_status**?
@@ -65,7 +65,7 @@ All tests were supported with visualizations (boxplots).
 
 ---
 
-## ⚙️ Feature Engineering
+**Feature Engineering**
 
 - Created new features like:
   - `likes_per_view`, `shares_per_view`, `comments_per_view`
@@ -75,9 +75,9 @@ All tests were supported with visualizations (boxplots).
 
 ---
 
-## 🤖 Model: Logistic Regression
+**Model: Logistic Regression**
 
-We trained a **logistic regression model** to predict the `verified_status` using engineered and encoded features.
+I trained a **logistic regression model** to predict the `verified_status` using engineered and encoded features.
 
 - Model: `LogisticRegression(max_iter=1000)`
 - Train/Test split: 80/20
@@ -85,7 +85,7 @@ We trained a **logistic regression model** to predict the `verified_status` usin
 
 ---
 
-## 📈 Evaluation Results
+**Evaluation Results**
 
 **Confusion Matrix:**
 
@@ -96,49 +96,48 @@ We trained a **logistic regression model** to predict the `verified_status` usin
 
 **Classification Report:**
 
-- ✅ Accuracy: `68.5%`
-- 🔁 Precision (Verified): `65%`
-- 🎯 Recall (Verified): `83%`
-- 📊 F1-Score (Verified): `73%`
+-  *Accuracy*: `68.5%`
+-  *Precision* (Verified): `65%`
+-  *Recall* (Verified): `83%`
+-  *F1-Score* (Verified): `73%`
 
 ---
 
-## 📌 Feature Importance (Model Coefficients)
+**Feature Importance (Model Coefficients)**
 
 Barplot of most impactful features:
 
-> 🖼️ _Place plot here_  
-> _Code: `sns.barplot(data=feature_coefficients, ...)`_
+![Feature_Coefficients](images/Feature_Coefficients.png )
 
 ---
 
-## 💡 Executive Summary
+**Executive Summary**
 
-### 1. What was the main goal?
-To predict whether a TikTok video was posted by a verified user based on video metadata and author account status.
+**1. What was the main goal?**
+*To predict whether a TikTok video was posted by a verified user based on video metadata and author account status.*
 
-### 2. Why Logistic Regression?
-Logistic regression is ideal for binary classification tasks like this, and it allows interpretation of how each feature influences the verified status.
+**2. Why Logistic Regression?**
+*Logistic regression is ideal for binary classification tasks like this, and it allows interpretation of how each feature influences the verified status.*
 
-### 3. What were the key findings?
+**3. What were the key findings?**
 
-- Longer videos tend to correlate positively with verified accounts.
-- Users who post opinions rather than claims are more likely to be verified.
-- Text length was a moderately important feature.
-- Class imbalance was successfully handled through upsampling.
+-*Longer videos tend to correlate positively with verified accounts.*
+-*Users who post opinions rather than claims are more likely to be verified.*
+-*Text length was a moderately important feature.*
+-*Class imbalance was successfully handled through upsampling.*
 
-### 4. Was the model effective?
+**4. Was the model effective?**
 
 - **Accuracy: 68.5%**
 - **Recall: 83%** for verified class — meaning the model correctly identified the majority of verified users.
 - Acceptable performance given the data complexity and limited text-based features.
 
-### 5. Business Recommendations
+**5. Business Recommendations**
 
 - TikTok moderation teams could use similar models to flag likely verified accounts for content review.
 - Marketing teams can analyze high-performing verified videos to optimize content strategy.
 
-### 6. Limitations
+**6. Limitations**
 
 - The model does not use natural language processing (NLP) on the `video_transcription_text`.
 - Feature interactions and non-linear models (e.g., Random Forests, XGBoost) may yield higher performance.
@@ -147,9 +146,8 @@ Logistic regression is ideal for binary classification tasks like this, and it a
 
 ## 📁 Files in the Repository
 
-- `tiktok_project_analysis.py`: full cleaned code
+- `tiktok_project_analysis.py`: full cleaned code with modeling and EDA
 - `README.md`: this file
-- `tiktok_dataset.csv`: original dataset
 - `images/`: directory for exported plots
 
 ---
