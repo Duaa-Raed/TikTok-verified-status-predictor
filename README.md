@@ -144,7 +144,7 @@ Barplot of most impactful features:
 
 ---
 
-## 📁 Files in the Repository
+**Files in the Repository**
 
 - `tiktok_project_analysis.py`: full cleaned code with modeling and EDA
 - `README.md`: this file
@@ -152,7 +152,7 @@ Barplot of most impactful features:
 
 ---
 
-## ✨ Final Note
+**Final Note**
 
 This project showcases the ability to lead an end-to-end predictive analytics task, from raw data to actionable insights, and communicate the results effectively with both visualizations and modeling evaluation.
 
