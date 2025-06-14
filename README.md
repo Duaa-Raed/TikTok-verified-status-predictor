@@ -1,16 +1,17 @@
-**TikTok Verified Status Prediction**
+**Predicting TikTok Verified Accounts Using Logistic Regression**
 
 **Overview**
 
 
-This project focuses on analyzing and modeling TikTok video data to predict whether a user is **verified** or **not verified** based on various video and account characteristics. The analysis was conducted using Python and follows a full data science workflow including:
-
+This project explores TikTok video data to predict whether a video was posted by a verified user.  
+Using Python, I applied the full data science workflow including:
 - Exploratory Data Analysis (EDA)
 - Outlier treatment and feature engineering
 - Class imbalance handling
 - Logistic Regression modeling
-- Model evaluation with precision, recall, accuracy, and confusion matrix
-- Feature interpretation and business recommendations
+- Model evaluation (precision, recall, accuracy, confusion matrix)
+- Feature interpretation and business insights
+
 
 ---
 
@@ -100,6 +101,9 @@ I trained a **logistic regression model** to predict the `verified_status` using
 -  *Precision* (Verified): `65%`
 -  *Recall* (Verified): `83%`
 -  *F1-Score* (Verified): `73%`
+-  *Baseline accuracy from guessing majority class: 50%*
+-  *Model accuracy: 68.5%* 
+-  *The model significantly outperforms random guessing.*
 
 ---
 
@@ -139,8 +143,9 @@ Barplot of most impactful features:
 
 **6. Limitations**
 
-- The model does not use natural language processing (NLP) on the `video_transcription_text`.
-- Feature interactions and non-linear models (e.g., Random Forests, XGBoost) may yield higher performance.
+- The model does **not leverage Natural Language Processing (NLP)** techniques to analyze `video_transcription_text`. Using NLP could extract deeper semantic meaning and improve performance.
+- I used logistic regression for interpretability. However, **non-linear models** such as **Random Forests or XGBoost** might perform better due to their ability to capture complex feature interactions.
+
 
 ---
 
