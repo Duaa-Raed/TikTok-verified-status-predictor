@@ -12,7 +12,7 @@ import statsmodels.api as sm
 
 
 # Read the data
-tiktok_dataset = pd.read_csv("C:/Users/duaar/OneDrive/Desktop/Tik Tok/tiktok_dataset.csv")
+tiktok_dataset = pd.read_csv("//tiktok_dataset.csv")
 
 print("Overview of first 10 rows")
 print(tiktok_dataset.head(10))
@@ -61,7 +61,6 @@ for column in numeric_columns:
 plt.figure(figsize=(10, 6))
 sns.countplot(data=tiktok_dataset_cleaned, x='claim_status', palette='viridis')
 plt.title('Distribution of claim_status')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Distribution_of_claim_status.png")
 plt.show()
 
 # Code a correlation matrix to help determine most correlated variables
@@ -74,7 +73,6 @@ print(correlation_matrix)
 plt.figure(figsize=(12, 8))
 sns.heatmap(correlation_matrix, annot=True, cmap='magma', center=0)
 plt.title('Correlation Matrix Heatmap')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Correlation_Matrix_Heatmap.png")
 plt.show()
 
 # Fix warnings using .loc
@@ -109,13 +107,11 @@ H1: There is a significant difference in likes_per_view between banned and activ
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=tiktok_dataset_cleaned, x='claim_status', y='likes_per_view', palette='plasma')
 plt.title('Boxplot: likes_per_view by claim_status')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Boxplot_likes_per_view_by_claim_status.png")
 plt.show()
 
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=tiktok_dataset_cleaned, x='author_ban_status', y='likes_per_view', palette='inferno')
 plt.title('Boxplot: likes_per_view by author_ban_status')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Boxplot_likes_per_view_by_author_ban_status.png")
 plt.show()
 
 
@@ -147,7 +143,6 @@ print(balanced_data['verified_status'].value_counts())
 plt.figure(figsize=(8, 6))
 sns.countplot(data=balanced_data, x='verified_status', palette='rocket')
 plt.title('Distribution of verified_status After Balancing')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Distribution_of_verified_status_After_Balancing.png")
 plt.show()
 
 
@@ -198,7 +193,6 @@ sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='YlOrRd')
 plt.title('Confusion Matrix')
 plt.xlabel('Predicted')
 plt.ylabel('Actual')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Confusion_Matrix.png")
 plt.show()
 
 # Feature coefficients
@@ -210,7 +204,6 @@ feature_coefficients = pd.DataFrame({
 plt.figure(figsize=(10, 6))
 sns.barplot(data=feature_coefficients, x='coefficient', y='feature', palette='mako')
 plt.title('Feature Coefficients')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Feature_Coefficients.png")
 plt.show()
 
 
@@ -234,7 +227,6 @@ sns.heatmap(conf_matrix_display, annot=True, fmt='d', cmap='PuBu',
 plt.title('Confusion Matrix with Detailed Labels')
 plt.xlabel('Predicted Label')
 plt.ylabel('True Label')
-plt.savefig("C:/Users/duaar/OneDrive/Desktop/images.1/Confusion_Matrix_with_Detailed_Labels.png")
 plt.show()
 
 
