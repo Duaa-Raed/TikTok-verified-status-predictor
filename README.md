@@ -141,12 +141,6 @@ Barplot of most impactful features:
 - TikTok moderation teams could use similar models to flag likely verified accounts for content review.
 - Marketing teams can analyze high-performing verified videos to optimize content strategy.
 
-**6. Limitations**
-
-- The model does **not leverage Natural Language Processing (NLP)** techniques to analyze `video_transcription_text`. Using NLP could extract deeper semantic meaning and improve performance.
-- I used logistic regression for interpretability. However, **non-linear models** such as **Random Forests or XGBoost** might perform better due to their ability to capture complex feature interactions.
-
-
 ---
 
 **Files in the Repository**
