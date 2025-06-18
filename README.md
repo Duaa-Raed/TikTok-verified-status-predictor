@@ -22,12 +22,15 @@ Using Python, I applied the full data science workflow including:
 **Executive Summary**
 ---
 **1. What was the main goal?**
+
 *To predict whether a TikTok video was posted by a verified user based on video metadata and author account status.*
 
 **2. Why Logistic Regression?**
+
 *Logistic regression is ideal for binary classification tasks like this, and it allows interpretation of how each feature influences the verified status.*
 
 **3. What were the key findings?**
+
 
 -*Longer videos tend to correlate positively with verified accounts.*
 -*Users who post opinions rather than claims are more likely to be verified.*
