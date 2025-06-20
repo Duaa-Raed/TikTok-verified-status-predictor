@@ -86,8 +86,10 @@ The model shows excellent precision and recall, indicating balanced performance 
 Confusion Matrices
 
 
-![Logistic Regression Confusion Matrix](Confusion_Matrix_with_Detailed_Labels.png)
+![Logistic Regression Confusion Matrix](images/Confusion_Matrix_with_Detailed_Labels.png)
+
 ![Random Forest Confusion Matrix](images/Random_Forest_Confusion_Matrix.png)
+
 ![XGBoost Confusion Matrix](images/XGBoost_Confusion_Matrix.png)
 
 Random Forest confusion matrix shows very high true positive and true negative rates.
