@@ -84,7 +84,8 @@ XGBoost outperformed both Logistic Regression and Random Forest across all key m
 The model shows excellent precision and recall, indicating balanced performance for both classes.
 
 Confusion Matrices
-[Insert Confusion Matrix Images for each model here]
+
+
 ![Logistic Regression Confusion Matrix](Confusion_Matrix_with_Detailed_Labels.png)
 ![Random Forest Confusion Matrix](images/Random_Forest_Confusion_Matrix.png)
 ![XGBoost Confusion Matrix](images/XGBoost_Confusion_Matrix.png)
