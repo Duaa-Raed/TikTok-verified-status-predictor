@@ -55,6 +55,9 @@ Visualizations (boxplots, countplots) provided insight into feature distribution
 [Insert EDA Visualizations Here]
 ![Boxplot likes per view by author ban status](images/Boxplot__likes_per_view_by_author_ban_status.png)
 
+![Boxplot likes per view by claim status](images/Boxplot__likes_per_view_by_claim_status.png)
+
+
 Examples: Boxplots of likes_per_view by claim_status, bar plots of verified_status counts, etc.
 
 Modeling Approaches
