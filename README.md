@@ -58,8 +58,6 @@ Visualizations (boxplots, countplots) provided insight into feature distribution
 ![Boxplot likes per view by claim status](images/Boxplot__likes_per_view_by_claim_status.png)
 
 
-Examples: Boxplots of likes_per_view by claim_status, bar plots of verified_status counts, etc.
-
 Modeling Approaches
 ----
 Three classification models were trained and evaluated:
@@ -87,6 +85,9 @@ The model shows excellent precision and recall, indicating balanced performance 
 
 Confusion Matrices
 [Insert Confusion Matrix Images for each model here]
+![Logistic Regression Confusion Matrix](Confusion_Matrix_with_Detailed_Labels.png)
+![Random Forest Confusion Matrix](images/Random_Forest_Confusion_Matrix.png)
+![XGBoost Confusion Matrix](images/XGBoost_Confusion_Matrix.png)
 
 Random Forest confusion matrix shows very high true positive and true negative rates.
 
