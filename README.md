@@ -53,6 +53,8 @@ Engagement metrics (likes_per_view, shares_per_view, comments_per_view) were ana
 Visualizations (boxplots, countplots) provided insight into feature distributions and class balances.
 
 [Insert EDA Visualizations Here]
+![Boxplot likes per view by author ban status](images/Boxplot__likes_per_view_by_author_ban_status.png)
+
 Examples: Boxplots of likes_per_view by claim_status, bar plots of verified_status counts, etc.
 
 Modeling Approaches
