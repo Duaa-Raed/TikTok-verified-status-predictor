@@ -60,24 +60,26 @@ Visualizations (boxplots, countplots) provided insight into feature distribution
 
 Modeling Approaches
 ----
-Three classification models were trained and evaluated:
+In this project, three different classification models were used to predict verified status on TikTok based on several user characteristics. The three models are:
 
-Model	Key Details
-Logistic Regression	Baseline linear model
-Random Forest	Ensemble tree-based model
-XGBoost	Gradient boosting tree algorithm
+Logistic Regression:
+This model was used because it is the simplest and most interpretable model. The primary goal was to serve as a baseline for evaluating the performance of more complex models. The model relies on a linear relationship between variables and the verification result, and is suitable as a starting point for understanding whether the data contains clear signals that characterize verified accounts.
 
-Models were tuned via GridSearchCV with cross-validation.
+Random Forest Classifier:
+This model was used because of its high ability to handle nonlinear relationships and multidimensional data. It also reduces the possibility of overfitting by combining multiple decision trees. Using it helped improve classification accuracy and compare its performance with the logistic model.
 
-Used all numeric, categorical, and reduced textual features.
+XGBoost (Extreme Gradient Boosting):
+
+This is one of the most powerful reinforcement learning models and was used as an advanced stage after the previous two models to extract the best possible performance. XGBoost is characterized by its ability to handle overlap between variables, efficiently handle imbalanced data, and improve performance by reinforcing learning from past errors. This model demonstrated the best performance in terms of precision, recall, and F1-score metrics.
 
 Results Summary
 ----
-Metric	Logistic Regression	Random Forest	XGBoost
-Accuracy	~ (not specified)	99.77%	99.87%
-Precision	(not specified)	1.00	1.00
-Recall	(not specified)	0.9934	0.9963
-F1-Score	(not specified)	0.9967	0.9981
+| النموذج              | الدقة (Accuracy) | الاستدعاء (Recall) | F1-Score |
+|----------------------|------------------|---------------------|----------|
+| Logistic Regression  | 0.9793           | 0.9518              | 0.9754   |
+| Random Forest        | 0.9977           | 0.9938              | 0.9969   |
+| XGBoost              | 0.9987           | 0.9963              | 0.9981   |
+
 
 XGBoost outperformed both Logistic Regression and Random Forest across all key metrics.
 
