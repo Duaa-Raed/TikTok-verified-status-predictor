@@ -74,7 +74,7 @@ This is one of the most powerful reinforcement learning models and was used as a
 
 Results Summary
 ----
-| النموذج              | الدقة (Accuracy) | الاستدعاء (Recall) | F1-Score |
+| models             |  (Accuracy) |  (Recall) | F1-Score |
 |----------------------|------------------|---------------------|----------|
 | Logistic Regression  | 0.9793           | 0.9518              | 0.9754   |
 | Random Forest        | 0.9977           | 0.9938              | 0.9969   |
