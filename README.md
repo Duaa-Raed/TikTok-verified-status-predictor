@@ -12,7 +12,7 @@ This project aims to classify TikTok videos into Claim or Opinion categories bas
 
 Dataset Summary
 ----
-Total records: 19,382 videos initially.
+Total records: 19,382 videos initially .
 
 Key features:
 
